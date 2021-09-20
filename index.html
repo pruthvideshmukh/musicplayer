@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <title>Music Player</title>
+
+  <script>
+    $(function () {
+      $('[data-bs-toggle="tooltip"]').tooltip();
+    });
+  </script>
+</head>
+
+<body>
+
+  <div class="container my-sm-2">
+    <div class="row container">
+      <div class="container col-xl-4 col-sm-6 main mx-sm-auto text-center p-4 shadow-lg">
+        <div class="row mt-1">
+          <h2 id="title">Ya re ya</h2>
+          <h4 id="artist" class="text-muted">Rohan Pradhan</h4>
+        </div>
+        <div class="row my-4 img">
+          <div class="container d-flex justify-content-center align-items-center">
+            <img src="GunganTujeOthavarRahuDe.jpg" class="rounded-circle img-responsive img-fluid"
+              alt="music image">
+          </div>
+        </div>
+        <div class="row">
+          <audio src="GunganTujeOthavarRahuDe.mp3" controls></audio>
+        </div>
+        <div class="row mt-5">
+          <div class="container buttons d-flex justify-content-between">
+            <i class="fas fa-backward" id="previous" data-bs-toggle="tooltip" data-bs-placement="top"
+              title="Previous"></i>
+            <i class="fas fa-play effect" id="play" data-bs-toggle="tooltip" data-bs-placement="top" title="Play"></i>
+            <i class="fas fa-forward" id="next" data-bs-toggle="tooltip" data-bs-placement="top" title="Next"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(243, 233, 233);
+}
+
+.main{
+    background-color: white;
+    border-radius: 2rem;
+    height: 100vh;
+}
+
+.bdr-circle{
+    border-radius: 50%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4);
+}
+
+
+.buttons .fas{
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0, 0, 0, 0.8));
+}
+
+.buttons .fa-play{
+    color: #f6f6f6;
+    background-color: black;
+}
+
+.buttons .fas:hover{
+    color: black;
+    background-color: #f6f6f6;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4);
+}
+
+.animate{
+    animation: rotate 4s linear  infinite  ;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
